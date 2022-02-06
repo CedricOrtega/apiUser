@@ -5,6 +5,7 @@ import lombok.Data;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
+import java.util.Date;
 
 @Data
 @Entity
@@ -20,7 +21,7 @@ public class UserEntity {
 
     @Temporal(TemporalType.DATE)
     @NotNull
-    private String birthDate;
+    private Date birthDate;
 
     @Column(name="country_residence")
     @NotNull
