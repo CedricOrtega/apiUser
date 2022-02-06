@@ -19,6 +19,7 @@ public class UserEntity {
     @NotNull
     private String userName;
 
+    @Column(name="birthdate")
     @Temporal(TemporalType.DATE)
     @NotNull
     private Date birthDate;
