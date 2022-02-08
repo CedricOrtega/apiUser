@@ -5,6 +5,7 @@ import lombok.Data;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
+import java.time.LocalDate;
 import java.util.Date;
 
 @Data
@@ -20,9 +21,8 @@ public class UserEntity {
     private String userName;
 
     @Column(name="birthdate")
-    @Temporal(TemporalType.DATE)
     @NotNull
-    private Date birthDate;
+    private LocalDate birthDate;
 
     @Column(name="country_residence")
     @NotNull
