@@ -1,7 +1,9 @@
 package com.offertestortega.apiUser.model;
 
 import com.offertestortega.apiUser.model.enums.Gender;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
@@ -10,6 +12,8 @@ import java.util.Date;
 
 @Data
 @Entity
+@AllArgsConstructor
+@NoArgsConstructor
 @Table(name = "user")
 public class UserEntity {
     @Id
